@@ -97,5 +97,6 @@ h1, h2, h3, h4, h5, h6 {font-family: "BebasNeue";}
     width: 100%;
     height: calc(100vh - 75px);
     background: url(../images/fondoSlider.jpg);
+    background-size: cover;
 }
 
