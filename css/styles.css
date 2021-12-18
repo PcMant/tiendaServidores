@@ -31,13 +31,16 @@
     font-family: "TrebuchetMS";
 }
 
-body{background-image: url(../images/pattern.png);}
+body{
+    background-image: url(../images/pattern.png);
+}
 
 h1, h2, h3, h4, h5, h6 {font-family: "BebasNeue";}
 
 /*Cabecera*/
 #header{
     display: flex;
+    position: sticky;
     height: 75px;
     width: 100%;
     align-items: center;
@@ -67,6 +70,12 @@ input[type="button"]:hover{
 }
 
 /*banner en la cabecera*/
+#header{
+    position: sticky;
+    z-index: 1;
+    top: 0px;
+}
+
 #header #banner{
     display: flex;
     align-items: center;
@@ -146,8 +155,94 @@ input[type="button"]:hover{
     padding-right: 30px;
 }
 
+/*MINE - CONTENIDO PRINCIPAL*/
+main{
+    display: flex;
+    min-height: calc(100vh - 75px);
+    flex-direction: column;
+}
+
 /*FOOTER*/
-#footer {
+#footer{
     width: 100%;
+    height: 470px;
     background-color: #2FDD92;
+    color: white;
+    overflow: hidden;
+}
+
+#footer .wrap{
+    display: flex;
+    justify-content: center;
+}
+
+#footer .wrap > div{
+    width: 320px;
+    height: 370px;
+    margin: 40px;
+    text-align: center;
+    color: white;
+    font-family: "TrebuchetMS";
+}
+
+#footer a{
+    text-decoration: none;
+    color: #2F86A6;
+    transition: all 300ms;
+}
+
+#footer h5{
+    display: block;
+    background: url('../img/pxgray.png'), white;
+    height: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: "BebasNeue";
+    font-size: 40px;
+    line-height: 55px;
+    color: black;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#footer ul{
+    text-align: left;
+    margin: 20px;
+    font-size: 25px;
+}
+
+#footer ul li{
+    margin-top: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+#footer ul li a{
+    display: block;
+    height: 40px;
+}
+
+#footer iframe{
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 5px solid white;
+    box-shadow: 0px 0px 5px gray;
+}
+
+#footer img{
+    margin-bottom: 15px;
+}
+
+#footer #broswsers img{
+    width: 45px;
 }
