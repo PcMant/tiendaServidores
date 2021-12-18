@@ -45,6 +45,27 @@ h1, h2, h3, h4, h5, h6 {font-family: "BebasNeue";}
     background-color: #2FDD92;
 }
 
+button,
+input[type="button"]{
+    background-color: #2F86A6;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    text-shadow: 0 1px 1px #ccc;
+}
+
+button:hover,
+input[type="button"]:hover{
+    background-color: #34BE82;
+}
+
 /*banner en la cabecera*/
 #header #banner{
     display: flex;
@@ -60,10 +81,6 @@ h1, h2, h3, h4, h5, h6 {font-family: "BebasNeue";}
 }
 
 /*menú principal en la capecera*/
-#header #nav-principal{
-
-}
-
 #header #nav-principal ul li{
     font-size: 24px;
     display: inline-block;
@@ -94,9 +111,41 @@ h1, h2, h3, h4, h5, h6 {font-family: "BebasNeue";}
 
 /*Slider*/
 #slider {
+    position: relative;
     width: 100%;
     height: calc(100vh - 75px);
     background: url(../images/fondoSlider.jpg);
     background-size: cover;
 }
 
+#slider #targeta1{
+    position: absolute;
+    width: 100%;
+    bottom: calc(50% - 100px);
+    text-align: center;
+}
+
+#slider #targeta1 h1{
+    margin-bottom: 100px;
+    color: #34BE82;
+    font-size: 60px;
+    letter-spacing: 3px;
+    text-shadow: 0 1px 1px #ccc;
+}
+
+#slider button{
+    font-size: 60px;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/*FOOTER*/
+#footer {
+    width: 100%;
+    background-color: #2FDD92;
+}
