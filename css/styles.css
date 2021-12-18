@@ -73,6 +73,8 @@ input[type="button"]:hover{
     font-family: "BebasNeue";
     font-size: 50px;
     letter-spacing: 3px;
+    text-decoration: none;
+    color: black;
 }
 
 #header #banner img{
