@@ -283,6 +283,37 @@ main .recomendados .article {
     grid-row: 2 / 3;
 }
 
+main .resenas{
+    display: flex;
+    margin: 30px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main .resenas .resena{
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2px #ddd;
+}
+
+main .resenas .resena > a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+main .resenas .resena > a > img:first-child{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 50% 50% 50% 50%;
+    -webkit-border-radius: 50% 50% 50% 50%;
+    -moz-border-radius: 50% 50% 50% 50%;
+    -ms-border-radius: 50% 50% 50% 50%;
+    -o-border-radius: 50% 50% 50% 50%;
+}
+
 
 /*FOOTER*/
 #footer {
