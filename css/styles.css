@@ -275,6 +275,7 @@ main .recomendados{
 main .recomendados img{
     width: 100%;
     height: auto;
+    cursor: pointer;
 }
 
 main .recomendados > h2{
@@ -317,6 +318,10 @@ main .resenas .resena > a > img:first-child{
     -moz-border-radius: 50% 50% 50% 50%;
     -ms-border-radius: 50% 50% 50% 50%;
     -o-border-radius: 50% 50% 50% 50%;
+}
+
+main > .content {
+    min-height: calc(100vh - 470px - 75px - 33px - 44px - 15px);
 }
 
 
