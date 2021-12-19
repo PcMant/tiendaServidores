@@ -58,6 +58,11 @@ h6 {
   font-family: "WebSymbolsRegular";
 }
 
+.clearfix{
+    clear: both;
+    float: none;
+}
+
 /*Cabecera*/
 #header {
   display: flex;
@@ -504,6 +509,22 @@ textarea{
 }
 
 .mid-form p{margin-top: 5px; margin-bottom: 5px;}
+
+/*FICHA PRODUCTO*/
+main > .producto{
+ padding: 20px;
+}
+
+main > .producto img{
+    height: 400px;
+    width: auto;
+    float: left;
+}
+
+main > .producto p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
 
 /*Puntos de ruptura*/
 @media (max-width: 1084px) {
