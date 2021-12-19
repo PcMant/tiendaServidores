@@ -265,6 +265,25 @@ main .section {
   box-shadow: 1px 1px 2px #ddd;
 }
 
+main .recomendados{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 20px 1fr;
+    gap: 20px;
+}
+
+main .recomendados > h2{
+    grid-row: 1 / 2;
+    grid-column: 1 / 5;
+}
+
+main .recomendados .article {
+    display: flex;
+    flex-direction: column;
+    grid-row: 2 / 3;
+}
+
+
 /*FOOTER*/
 #footer {
   width: 100%;
