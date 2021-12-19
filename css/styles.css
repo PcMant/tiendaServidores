@@ -432,6 +432,23 @@ main .resenas .resena > a > img:first-child{
   width: 45px;
 }
 
+
+/*PAGINA PRODUCTOS*/
+main .productos{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 40px repeat(10, 1fr);
+    gap: 40px;
+}
+
+main .productos h1 {
+    grid-column: 1 / 5;
+}
+
+main .productos .pr{
+    grid-row: auto;
+    grid-column: auto;
+}
+
 /*Puntos de ruptura*/
 @media (max-width: 1084px) {
   #footer .wrap {
