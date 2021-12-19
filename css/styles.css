@@ -586,6 +586,10 @@ main > .producto p {
     display: none;
   }
 
+  #header #nav-principal ul li{
+      display: block;
+  }
+
   #header #nav-principal > nav {
     display: block;
   }
@@ -597,11 +601,9 @@ main > .producto p {
   #nav-principal nav input:checked ~ ul {
     display: block;
     position: absolute;
-    top: 90px;
+    top: 79px;
     right: 0px;
   }
-
-  #nav-principal nav input:checked ~ li {display: block;}
 
   #nav-principal nav input {
     display: none;
