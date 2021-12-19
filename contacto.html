@@ -31,7 +31,36 @@
     <main>
         <div class="section content">
             <h1>Contacto</h1>
-            
+            <form action="" method="get" class="mid-form">
+
+                <div class="form-group">
+                    <label for="nombre">Nombre*</label>
+                    <input type="text" name="nombre" required="required" />
+                </div>
+
+                <div class="form-group">
+                    <label for="pretunta">Apellidos*</label>
+                    <input type="text" name="apellidos" required="required" />
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="text" name="email" required="required" />
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje*</label>
+                    <textarea></textarea>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <p>Todos los campos marcados con (*) son obligatorios</p>
+                
+                <input type="submit" value="Guadar" />
+                <input type="reset" value="Resetear" />
+                <input type="button" onclick="window.location.href='./'" value="Volver a inicio" />
+            </form>
         </div>
 
         </div>
