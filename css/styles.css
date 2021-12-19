@@ -272,6 +272,11 @@ main .recomendados{
     gap: 20px;
 }
 
+main .recomendados img{
+    width: 100%;
+    height: auto;
+}
+
 main .recomendados > h2{
     grid-row: 1 / 2;
     grid-column: 1 / 5;
