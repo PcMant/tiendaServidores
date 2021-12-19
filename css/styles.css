@@ -556,6 +556,14 @@ main > .producto p {
   }
 }
 
+@media (max-width: 810px){
+    main > .producto img {
+        height: auto;
+        width: 95%;
+        float: none;
+      }
+}
+
 @media (max-width: 690px) {
   main .recomendados {
     grid-template-columns: repeat(2, 1fr);
