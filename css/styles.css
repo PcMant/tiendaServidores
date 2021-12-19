@@ -58,9 +58,9 @@ h6 {
   font-family: "WebSymbolsRegular";
 }
 
-.clearfix{
-    clear: both;
-    float: none;
+.clearfix {
+  clear: both;
+  float: none;
 }
 
 /*Cabecera*/
@@ -78,7 +78,7 @@ h6 {
 button,
 input[type="button"],
 input[type="submit"],
-input[type="reset"]{
+input[type="reset"] {
   background-color: #2f86a6;
   border: none;
   margin: 3px;
@@ -102,7 +102,7 @@ input[type="reset"]{
 button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover,
-input[type="reset"]:hover{
+input[type="reset"]:hover {
   background-color: #34be82;
 }
 
@@ -135,6 +135,10 @@ input[type="reset"]:hover{
   margin: 0px 20px 0px 20px;
   letter-spacing: 1px;
   line-height: 70px;
+}
+
+#header #nav-principal > nav {
+  display: none;
 }
 
 #header #nav-principal ul li a {
@@ -276,65 +280,64 @@ main .section {
   box-shadow: 1px 1px 2px #ddd;
 }
 
-main .recomendados{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 20px 1fr;
-    gap: 20px;
+main .recomendados {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 20px 1fr;
+  gap: 20px;
 }
 
-main .recomendados img{
-    width: 100%;
-    height: auto;
-    cursor: pointer;
+main .recomendados img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
 }
 
-main .recomendados > h2{
-    grid-row: 1 / 2;
-    grid-column: 1 / 5;
+main .recomendados > h2 {
+  grid-row: 1 / 2;
+  grid-column: 1 / 5;
 }
 
 main .recomendados .article {
-    display: flex;
-    flex-direction: column;
-    grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  grid-row: 2 / 3;
 }
 
-main .resenas{
-    display: flex;
-    margin: 30px;
-    flex-direction: column;
-    gap: 20px;
+main .resenas {
+  display: flex;
+  margin: 30px;
+  flex-direction: column;
+  gap: 20px;
 }
 
-main .resenas .resena{
-    padding: 10px;
-    border: 1px solid #ccc;
-    box-shadow: 1px 1px 2px #ddd;
+main .resenas .resena {
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 2px #ddd;
 }
 
-main .resenas .resena > a{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5px;
+main .resenas .resena > a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
 }
 
-main .resenas .resena > a > img:first-child{
-    width: 50px;
-    height: 50px;
-    border: 1px solid #ccc;
-    border-radius: 50% 50% 50% 50%;
-    -webkit-border-radius: 50% 50% 50% 50%;
-    -moz-border-radius: 50% 50% 50% 50%;
-    -ms-border-radius: 50% 50% 50% 50%;
-    -o-border-radius: 50% 50% 50% 50%;
+main .resenas .resena > a > img:first-child {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 50% 50% 50% 50%;
+  -webkit-border-radius: 50% 50% 50% 50%;
+  -moz-border-radius: 50% 50% 50% 50%;
+  -ms-border-radius: 50% 50% 50% 50%;
+  -o-border-radius: 50% 50% 50% 50%;
 }
 
 main > .content {
-    min-height: calc(100vh - 470px - 75px - 33px - 44px - 15px);
+  min-height: calc(100vh - 470px - 75px - 33px - 44px - 15px);
 }
-
 
 /*FOOTER*/
 #footer {
@@ -393,6 +396,7 @@ main > .content {
 }
 
 #footer ul li {
+    display: block;
   margin-top: 10px;
   padding: 5px;
   border-bottom: 1px solid #ccc;
@@ -448,122 +452,172 @@ main > .content {
   width: 45px;
 }
 
-
 /*PAGINA PRODUCTOS*/
-main .productos{
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 40px repeat(10, 1fr);
-    gap: 40px;
+main .productos {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 40px repeat(10, 1fr);
+  gap: 40px;
 }
 
 main .productos h1 {
-    grid-column: 1 / 5;
+  grid-column: 1 / 5;
 }
 
-main .productos .pr{
-    grid-row: auto;
-    grid-column: auto;
+main .productos .pr {
+  grid-row: auto;
+  grid-column: auto;
 }
 
 /*FORMULARIO*/
-.mid-form{
-    width: 50%;
-    margin: 0px auto;
+.mid-form {
+  width: 50%;
+  margin: 0px auto;
 }
 
-.mid-form label{
-    display: block;
-    float:left;
-    text-align: left;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-size: 17px;
+.mid-form label {
+  display: block;
+  float: left;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 17px;
 }
 
 input[type="text"],
 textarea,
-select{
-    width: 100%;
-    min-height: 30px;
-    border: 1px solid #ccc;
-    padding: 3px;
-    margin-bottom: 5px;
-    transition: 300ms all;
+select {
+  width: 100%;
+  min-height: 30px;
+  border: 1px solid #ccc;
+  padding: 3px;
+  margin-bottom: 5px;
+  transition: 300ms all;
 }
 
-select{
-    width: 101%;
-    padding: 5px;
+select {
+  width: 101%;
+  padding: 5px;
 }
 
 input[type="text"]:focus,
-textarea:focus{
-    box-shadow: 0px 0px 5px #eee inset;
+textarea:focus {
+  box-shadow: 0px 0px 5px #eee inset;
 }
 
-textarea{
-    width: 100%;
-    height: 150px;
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 150px;
-    max-height: 300px;
+textarea {
+  width: 100%;
+  height: 150px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 150px;
+  max-height: 300px;
 }
 
-.mid-form p{margin-top: 5px; margin-bottom: 5px;}
+.mid-form p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 
 /*FICHA PRODUCTO*/
-main > .producto{
- padding: 20px;
+main > .producto {
+  padding: 20px;
 }
 
-main > .producto img{
-    height: 400px;
-    width: auto;
-    float: left;
+main > .producto img {
+  height: 400px;
+  width: auto;
+  float: left;
 }
 
 main > .producto p {
-    margin-top: 5px;
-    margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 /*Responsive*/
-@media (max-width: 1292px){
-    #cards{
-        flex-direction: column;
-    }
+@media (max-width: 1292px) {
+  #cards {
+    flex-direction: column;
+  }
 
-    #cards .card{
-        width: 100%;
-    }
+  #cards .card {
+    width: 100%;
+  }
 }
 
-@media (max-width: 1030px){
-    #footer .wrap{
-        flex-direction: column;
-        align-items: center;
-    }
+@media (max-width: 1030px) {
+  #footer .wrap {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    #footer .wrap > div{
-        width: 70%;
-    }
+  #footer .wrap > div {
+    width: 70%;
+  }
 }
-
 
 @media (max-width: 690px) {
-    main .recomendados {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        gap: 20px;
-    }
+  main .recomendados {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+  }
 
-    main .recomendados > h2,
-    main .recomendados > h1{
-        grid-column: 1 / 3;
-    }
+  main .recomendados > h2,
+  main .recomendados > h1 {
+    grid-column: 1 / 3;
+  }
 
-    main .recomendados .article {
-        grid-row: auto;
-    }
+  main .recomendados .article {
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 648px) {
+  #header #nav-principal > ul {
+    display: none;
+  }
+
+  #header #nav-principal > nav {
+    display: block;
+  }
+
+  #nav-principal nav ul {
+    display: none;
+  }
+
+  #nav-principal nav input:checked ~ ul {
+    display: block;
+    position: absolute;
+    top: 90px;
+    right: 0px;
+  }
+
+  #nav-principal nav input:checked ~ li {display: block;}
+
+  #nav-principal nav input {
+    display: none;
+  }
+
+  #nav-principal nav label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+  }
+
+  #nav-principal nav li {
+    display: block;
+    background: #2FDD92;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+  }
 }
