@@ -72,11 +72,11 @@ input[type="button"]{
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
     text-shadow: 0 1px 1px #ccc;
-    transition: 500ms;
-    -webkit-transition: 500ms;
-    -moz-transition: 500ms;
-    -ms-transition: 500ms;
-    -o-transition: 500ms;
+    transition: 500ms, transform 1000ms;
+    -webkit-transition: 500ms, transform 1000ms;
+    -moz-transition: 500ms, transform 1000ms;
+    -ms-transition: 500ms, transform 1000ms;
+    -o-transition: 500ms, transform 1000ms;
 }
 
 button:hover,
@@ -129,10 +129,10 @@ input[type="button"]:hover{
 #header #nav-principal ul li a:hover{
     color: #2F86A6;
     transform: scale(1.2, 1.2);
-    -webkit-transform:;
-    -moz-transform:;
-    -ms-transform:;
-    -o-transform:;
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
 }
 
 /*Slider*/
@@ -164,6 +164,7 @@ input[type="button"]:hover{
     -o-border-radius: 40px;
     padding-left: 30px;
     padding-right: 30px;
+    box-shadow: 3px 3px 3px black;
 }
 
 #slider button:hover{
@@ -198,12 +199,15 @@ main{
 }
 
 #footer .wrap > div{
+    display: flex;
     width: 320px;
     height: 370px;
     margin: 40px;
     text-align: center;
     color: white;
     font-family: "TrebuchetMS";
+    flex-direction: column;
+    gap: 10px;
 }
 
 #footer a{
@@ -266,9 +270,24 @@ main{
     margin-bottom: 15px;
 }
 
+#info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;;
+}
+
+#info p{
+    text-align: left;
+    padding-left: 20px;
+}
+
 #footer #follow{
     font-size: 40px;
     padding-bottom: 24px;
+}
+
+#follow{
+    text-align: center !important;
 }
 
 #footer #follow img{
